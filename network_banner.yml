@@ -11,3 +11,4 @@
       vars:
         - network_banner:  "{{ network_banner | default(None) }}"
         - banner_type: login
+      when: ansible_network_os is defined
